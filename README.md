@@ -55,6 +55,53 @@ http://localhost:8080/api/registro
 }
 ```
 
+### Obtener productos (GET)
+
+```txt
+http://localhost:8080/api/productos
+```
+
+**Respuesta**
+
+```json
+[
+    {
+        "precioUnitario": 4.5,
+        "codigoProducto": "001",
+        "cantidadProducto": 77,
+        "nombreProducto": "Manzana roja"
+    }
+]
+```
+
+
+### Crear productp (POST)
+
+Registro de un nuevo usuario 
+
+```txt 
+http://localhost:8080/api/productos
+```
+**Body**
+```json
+{
+    "codigoProducto": "10001",
+    "nombreProducto": "producto prueba",
+    "precioUnitario": 9.5,
+    "cantidadProducto": 1
+}
+```
+
+**Respuesta**
+
+```json
+{
+    "success": true,
+    "message": "Producto creado correctamente"
+}
+```
+
+
 
 ## Notas
 
